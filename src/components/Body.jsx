@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from './Button';
 import { Text } from './Text';
+import Card from './Card';
 
 export function Body() {
   return (
@@ -22,7 +23,7 @@ export function Body() {
                   <button></button>
               </div>
               <img
-                  src="./images/illustration.svg"
+                  src="./images/illustrations/illustration-1.svg"
                   alt="illustration"
                   className="max-w-150"
               />
@@ -58,13 +59,86 @@ export function Body() {
                   name="Services"
                   textColor="#000000"
                   bgColor="#B9FF66"
-                  fontSize="text-[2.5rem]"
+                  fontSize="2.5rem"
               />
-              <p className='w-145 ml-10'>
+              <p className="w-145 ml-10">
                   At our digital marketing agency, we offer a range of services
                   to help businesses grow and succeed online. These services
                   include:
               </p>
+          </section>
+          <section className="grid grid-cols-2 gap-10 mt-20">
+              <Card
+                  bg={"#F3F3F3"}
+                  img={"./images/card-images/card-1.svg"}
+                  text={"#191A23"}
+                  arrow={"#B9FF66"}
+                  name={"Search engine optimization"}
+                  bgColor={"#B9FF66"}
+                  textColor={"#000000"}
+              />
+              <Card
+                  bg={"#B9FF66"}
+                  img={"./images/card-images/card-2.svg"}
+                  text={"#191A23"}
+                  arrow={"#B9FF66"}
+                  name={"Pay-per-click advertising"}
+                  bgColor={"#FFFFFF"}
+                  textColor={"#000000"}
+              />
+              <Card
+                  bg={"#191A23"}
+                  img={"./images/card-images/card-3.svg"}
+                  text={"#FFFFFF"}
+                  arrow={"#000000"}
+                  name={"Social Media Marketing"}
+                  bgColor={"#FFFFFF"}
+                  textColor={"#000000"}
+              />
+              <Card
+                  bg={"#F3F3F3"}
+                  img={"./images/card-images/card-4.svg"}
+                  text={"#191A23"}
+                  arrow={"#B9FF66"}
+                  name={"Email Marketing"}
+                  bgColor={"#B9FF66"}
+                  textColor={"#000000"}
+              />
+              <Card
+                  bg={"#B9FF66"}
+                  img={"./images/card-images/card-5.svg"}
+                  text={"#191A23"}
+                  arrow={"#B9FF66"}
+                  name={"Content Creation"}
+                  bgColor={"#FFFFFF"}
+                  textColor={"#000000"}
+              />
+              <Card
+                  bg={"#191A23"}
+                  img={"./images/card-images/card-6.svg"}
+                  text={"#FFFFFF"}
+                  arrow={"#000000"}
+                  name={"Analytics and Tracking"}
+                  bgColor={"#B9FF66"}
+                  textColor={"#000000"}
+              />
+          </section>
+          <section className="flex bg-[#F3F3F3] max-w-[1240px] h-[347px] mt-[123.5px] rounded-[45px] items-center justify-around">
+              <div className="w-[500px] h-[227px] flex flex-col">
+                  <h3 className="font-medium text-[30px] h-[38px]">
+                      Let’s make things happen
+                  </h3>
+                  <p className="my-[26px] text-[1.125rem]">
+                      Contact us today to learn more about how our digital
+                      marketing services can help your business grow and succeed
+                      online.
+                  </p>
+                  <Button
+                      name={"Get your free proposal"}
+                      classes={"bg-[#191A23] text-[#FFFFFF] w-72"}
+                  />
+              </div>
+              <img src="./images/illustrations/illustration-2.svg" alt="illustration" className='h-[394px]' />
           </section>
       </main>
   );
